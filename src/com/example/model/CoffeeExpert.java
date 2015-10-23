@@ -11,7 +11,7 @@ public class CoffeeExpert {
        types.add("Latte");
        types.add("Cappuccino");
      }
-     else if (type.equals("Froffy")) {
+     else if (type.equals("froffy")) {
        types.add("Latte");
        types.add("Cappuccino");
        types.add("Frappuccino");

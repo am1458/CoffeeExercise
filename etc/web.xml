@@ -6,7 +6,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Coffee</servlet-name>
-        <url-pattern>/SelectCoffee.do</url-pattern>
+        <url-pattern>/CoffeeSelection.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1,15 +1,25 @@
 <html>
-<title>Coffee Advisor</title>
+<head>
+    <title>Coffee Advisor</title>
+    <style type="text/css">
+        body {    
+            background-image: url("images/coffee.jpg");
+            background-repeat: no-repeat;
+            background-position:right top;
+        }
+    </style>
+</head>    
 <body>
   <h1 align="center">Coffee Advisor </h1>
-  <form method="POST" action="SelectCoffee.do">
+  <form method="POST" action="CoffeeSelection.do">
     Select Coffee
     Type:
     <select name="type" size="1">
       <option value="milky">Milky</option>
-      <option value="froffy">Froffy</option>
       <option value="icey">Icey</option>
-      <option value="strong">Spaced Out</option>
+      <option value="strong">Strong</option>
+      <option value="froffy">Froffy</option>
+      <option value="other">I don't want coffee</option>
     </select>
     <br><br>
     <center>
