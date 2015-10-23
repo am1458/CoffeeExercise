@@ -8,20 +8,20 @@ public class CoffeeExpert {
      List types = new ArrayList();
 
      if (type.equals("milky")) {
-       types.add("latte");
-       types.add("cappuccino");
+       types.add("Latte");
+       types.add("Cappuccino");
      }
-     else if (type.equals("froffy")) {
-       types.add("latte");
-       types.add("cappuccino");
-       types.add("frappuccino");
+     else if (type.equals("Froffy")) {
+       types.add("Latte");
+       types.add("Cappuccino");
+       types.add("Frappuccino");
      }
      else if (type.equals("icey")) {
-       types.add("frappuccino");
+       types.add("Frappuccino");
      }
      else if (type.equals("strong")) {
-       types.add("espresso");
-       types.add("double espresso");
+       types.add("Espresso");
+       types.add("Double Espresso");
      }
      else {
        types.add("Vending Machine");
