@@ -9,23 +9,19 @@ public class CoffeeExpert {
 
      if (type.equals("milky")) {
        types.add("Latte");
-       types.add("Cappuccino");
      }
      else if (type.equals("froffy")) {
-       types.add("Latte");
        types.add("Cappuccino");
-       types.add("Frappuccino");
      }
      else if (type.equals("icey")) {
        types.add("Frappuccino");
      }
      else if (type.equals("strong")) {
        types.add("Espresso");
-       types.add("Double Espresso");
      }
-     else {
-       types.add("Vending Machine");
-     }
+     //else {
+       //types.add("Juice");
+     //}
      return(types);
    }
 }

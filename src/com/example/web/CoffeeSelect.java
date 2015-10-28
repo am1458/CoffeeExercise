@@ -31,7 +31,6 @@ public class CoffeeSelect extends HttpServlet {
     CoffeeExpert ce = new CoffeeExpert();
 
     List result = ce.getTypes(c);
-
     // Use the below code to debug the program if you get problems
     //response.setContentType("text/html"):
     //PrintWriter out = response.getWriter();
@@ -44,8 +43,47 @@ public class CoffeeSelect extends HttpServlet {
 
     // The results will be passed back (as an attribute) to the JSP view
     // The attribute will be a name/value pair, the value in this case will be a List object
-    request.setAttribute("styles", result);
-    RequestDispatcher view = request.getRequestDispatcher("result.jsp");
-    view.forward(request, response);
+    /*if(!c.equals("other")) {    
+        request.setAttribute("styles", result);
+        RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+        view.forward(request, response);
+    } else {
+        request.setAttribute("styles", result);
+        RequestDispatcher view = request.getRequestDispatcher("result1.jsp");
+        view.forward(request, response);
+    }*/
+    RequestDispatcher view;
+    switch(c) {
+        case "milky":
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("milky.jsp");
+            view.forward(request, response);
+            break;
+        case "icey":
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("icey.jsp");
+            view.forward(request, response);
+            break;
+        case "strong":
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("strong.jsp");
+            view.forward(request, response);
+            break;
+        case "froffy":
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("froffy.jsp");
+            view.forward(request, response);
+            break;
+        case "other":
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("other.jsp");
+            view.forward(request, response);
+            break;
+        default:
+            request.setAttribute("styles", result);
+            view = request.getRequestDispatcher("default.jsp");
+            view.forward(request, response);
+            break;
+    }
   }
 }
